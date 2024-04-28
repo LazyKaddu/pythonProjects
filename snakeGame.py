@@ -48,7 +48,7 @@ def appendSnake():
 
 def snakeColide(appleRect,snakeRect): 
     global score, snake,run,state
-    if (((snake[0] in snake[1::]) or (snake[0][0] not in range(0,width) ) or (snake[0][0] not in range(0,width))) and state):
+    if (((snake[0] in snake[1::]) or (snake[0][0] not in range(0,height) ) or (snake[0][0] not in range(0,width))) and state):
         run=False
         
     elif pygame.Rect.colliderect(appleRect,snakeRect):
